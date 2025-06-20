@@ -11,7 +11,7 @@ const About = () => {
 
   const skills = [
     { name: "React & Next.js", icon: Code2, category: "Frontend" },
-    { name: "Node.js & Python", icon: Server, category: "Backend" },
+    { name: "Node.js", icon: Server, category: "Backend" },
     { name: "PostgreSQL & MongoDB", icon: Database, category: "Database" },
     { name: "AWS & Docker", icon: Globe, category: "Cloud" },
   ];
