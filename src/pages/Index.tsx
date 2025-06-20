@@ -1,5 +1,10 @@
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import NavigationBar from "@/components/NavigationBar";
+import Projects from "@/components/Projects";
 import { useEffect } from "react";
 
 const Index = () => {
@@ -26,11 +31,11 @@ const Index = () => {
     <div className="min-h-screen bg-minimal-surface text-minimal-text-primary selection:bg-minimal-accent/20 font-sans antialiased overflow-x-hidden relative">
       <NavigationBar scrollToSection={scrollToSection} />
       <Hero scrollToSection={scrollToSection} />
-      {/* <About />
+      <About />
       <Experience />
       <Projects />
       <Contact />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };

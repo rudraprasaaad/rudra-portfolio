@@ -163,7 +163,6 @@ const Hero = ({ scrollToSection }: HeroProps) => {
         />
       </div>
 
-      {/* Hero Section */}
       <motion.section
         id="hero"
         ref={heroRef}
