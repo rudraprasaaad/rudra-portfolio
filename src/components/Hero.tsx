@@ -9,7 +9,7 @@ interface HeroProps {
 
 const Hero = ({ scrollToSection }: HeroProps) => {
   const heroRef = useRef<HTMLElement>(null);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [, setMousePosition] = useState({ x: 0, y: 0 });
 
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
