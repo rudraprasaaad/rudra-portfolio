@@ -38,7 +38,7 @@ const Contact = () => {
 
           <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
             <motion.a
-              href="mailto:alex@example.com"
+              href="mailto:goudarudra23@gmail.com"
               className="inline-flex items-center gap-3 px-10 py-5 bg-minimal-warm hover:bg-minimal-warm-light text-white rounded-xl font-medium transition-all duration-300 text-base shadow-lg hover:shadow-xl hover:shadow-minimal-warm/20"
               whileHover={{ y: -4, scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
