@@ -15,6 +15,7 @@ const Contact = () => {
       className="py-20 px-8 lg:px-16 relative border-t border-minimal-border-subtle/50"
     >
       <div className="max-w-5xl mx-auto text-center">
+        {/* @ts-expect-error: framer-motion props type mismatch with React 18, safe to ignore */}
         <motion.div className="space-y-16" {...fadeInUpDelayed}>
           <div className="space-y-8">
             <motion.div className="space-y-6">

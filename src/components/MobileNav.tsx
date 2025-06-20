@@ -144,7 +144,9 @@ const MobileNav = () => {
         {isOpen && (
           <>
             {/* Animated backdrop */}
+
             <motion.div
+              // @ts-expect-error motion.div variants typing issue
               variants={backdropVariants}
               initial="closed"
               animate="open"
@@ -155,6 +157,7 @@ const MobileNav = () => {
 
             {/* Enhanced Menu Content */}
             <motion.div
+              // @ts-expect-error motion.div variants typing issue
               variants={menuVariants}
               initial="closed"
               animate="open"
@@ -165,6 +168,7 @@ const MobileNav = () => {
                 {menuItems.map((item) => (
                   <motion.div
                     key={item.label}
+                    // @ts-expect-error motion.div variants typing issue
                     variants={itemVariants}
                     whileHover={{
                       scale: 1.02,

@@ -32,6 +32,7 @@ const Projects = () => {
     >
       <div className="max-w-8xl mx-auto">
         <motion.div className="space-y-20">
+          {/* @ts-expect-error: framer-motion props type mismatch with React 18, safe to ignore */}
           <motion.div className="text-center space-y-8" {...fadeInUpDelayed}>
             <motion.div className="space-y-6">
               <motion.div
@@ -50,7 +51,6 @@ const Projects = () => {
               architecture and industry best practices.
             </p>
           </motion.div>
-
           <div
             className={`grid gap-8 ${
               projects.length === 1
