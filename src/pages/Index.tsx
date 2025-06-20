@@ -24,8 +24,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-minimal-surface text-minimal-text-primary selection:bg-minimal-accent/20 font-sans antialiased overflow-x-hidden relative">
       <NavigationBar scrollToSection={scrollToSection} />
-      {/* <Hero scrollToSectio={scrollToSection} />
-      <About />
+      <Hero scrollToSectio={scrollToSection} />
+      {/* <About />
       <Experience />
       <Projects />
       <Contact />

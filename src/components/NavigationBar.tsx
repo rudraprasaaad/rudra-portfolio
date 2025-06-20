@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import ThemeToggle from "./ThemeToggle";
+import MobileNav from "./MobileNav";
 
 interface NavigationBarProps {
   scrollToSection: (sectionId: string) => void;
@@ -46,6 +47,11 @@ const NavigationBar = ({ scrollToSection }: NavigationBarProps) => {
             </motion.button>
           ))}
           <ThemeToggle />
+        </div>
+
+        <div className="flex items-center gap-4 md:hidden">
+          <ThemeToggle />
+          <MobileNav />
         </div>
       </div>
     </motion.nav>

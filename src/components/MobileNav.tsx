@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +27,7 @@ const MobileNav = () => {
     }, 300);
   };
 
+  // Enhanced animation variants
   const menuVariants = {
     closed: {
       opacity: 0,
@@ -97,6 +98,7 @@ const MobileNav = () => {
 
   return (
     <div className="md:hidden">
+      {/* Enhanced Hamburger Button */}
       <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
         <Button
           variant="ghost"
@@ -212,7 +214,7 @@ const MobileNav = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.7, duration: 0.3 }}
                 >
-                  Alex.dev
+                  rudra.dev
                 </motion.p>
 
                 {/* Subtle glow effect */}
