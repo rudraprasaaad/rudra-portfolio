@@ -162,7 +162,7 @@ const MobileNav = () => {
               className="fixed inset-x-4 top-20 z-50 bg-minimal-surface/95 backdrop-blur-xl border border-minimal-border rounded-2xl p-8 shadow-2xl"
             >
               <motion.nav className="space-y-2">
-                {menuItems.map((item, index) => (
+                {menuItems.map((item) => (
                   <motion.div
                     key={item.label}
                     variants={itemVariants}
