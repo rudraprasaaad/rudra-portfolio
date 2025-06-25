@@ -16,7 +16,7 @@ const Experience = () => {
       duration: "2025 - Present",
     },
     {
-      company: "StartupXYZ",
+      company: "TeamUnibrains",
       position: "Full Stack Engineer Intern",
       duration: "Jan 2025 - May 2025",
       description:
