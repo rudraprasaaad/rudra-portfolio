@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Globe, ExternalLink, Gamepad2 } from "lucide-react";
+import { Globe, ExternalLink, Gamepad2, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -25,6 +25,7 @@ const Projects = () => {
         "Socially is a social media platform designed to connect users through interactive posts, profiles, and real-time chat. It features user authentication, profile customization, likes, comments, and notifications. The platform fosters online engagement by allowing users to share updates, interact with content, and build meaningful connections within a dynamic digital community.",
       tech: ["Next.js", "Postgres", "Clerk", "PrismaORM", "TypeScript"],
       link: "https://socially.rudraa.online",
+      repo: "https://github.com/rudraprasaaad/socially",
       status: "Live",
       icon: Globe,
       accent: "slate",
@@ -47,6 +48,7 @@ const Projects = () => {
         "GitHub Actions",
       ],
       link: "https://chess.rudraa.online/",
+      repo: "https://github.com/rudraprasaaad/chess-app",
       status: "Live",
       icon: Gamepad2,
       accent: "slate",
@@ -156,20 +158,47 @@ const Projects = () => {
                             </TooltipContent>
                           </Tooltip>
 
-                          <Link
-                            to={project.link ?? "#"}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="block"
-                          >
-                            <Button
-                              variant="ghost"
-                              className={`w-full justify-between text-minimal-text-secondary hover:text-minimal-${accentColor} hover:bg-minimal-${accentColor}/5 rounded-xl py-4 text-sm font-light tracking-wide`}
+                          <div className="flex items-center gap-2">
+                            <Link
+                              to={project.link ?? "#"}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="w-full"
                             >
-                              View Project
-                              <ExternalLink className="w-4 h-4" />
-                            </Button>
-                          </Link>
+                              <Button
+                                variant="ghost"
+                                className={`w-full justify-between text-minimal-text-secondary hover:text-minimal-${accentColor} hover:bg-minimal-${accentColor}/5 rounded-xl py-4 text-sm font-light tracking-wide`}
+                              >
+                                View Project
+                                <ExternalLink className="w-4 h-4" />
+                              </Button>
+                            </Link>
+                            <Tooltip>
+                              <TooltipTrigger asChild>
+                                <Link
+                                  to={project.repo ?? "#"}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
+                                  <Button
+                                    variant="outline"
+                                    size="icon"
+                                    className={`bg-minimal-surface hover:bg-minimal-surface-soft border-minimal-border-subtle rounded-xl text-minimal-text-secondary`}
+                                  >
+                                    <Github className="w-4 h-4" />
+                                  </Button>
+                                </Link>
+                              </TooltipTrigger>
+                              <TooltipContent
+                                side="top"
+                                className="p-2 bg-minimal-surface-soft border-minimal-border-subtle rounded-lg"
+                              >
+                                <p className="font-light text-xs text-minimal-text-muted tracking-wide">
+                                  Source Code
+                                </p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </div>
                         </div>
                       </CardContent>
                     </Card>
