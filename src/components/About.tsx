@@ -10,10 +10,26 @@ const About = () => {
   };
 
   const skills = [
-    { name: "React & Next.js", icon: Code2, category: "Frontend" },
-    { name: "Node.js", icon: Server, category: "Backend" },
-    { name: "PostgreSQL & MongoDB", icon: Database, category: "Database" },
-    { name: "AWS & Docker", icon: Globe, category: "Cloud" },
+    {
+      name: "React, Next.js & TanStack Query",
+      icon: Code2,
+      category: "Frontend",
+    },
+    {
+      name: "Node.js, Bun & WebSockets",
+      icon: Server,
+      category: "Backend",
+    },
+    {
+      name: "PostgreSQL, Redis & PrismaORM",
+      icon: Database,
+      category: "Database",
+    },
+    {
+      name: "AWS, Docker, CI/CD & GitHub Actions",
+      icon: Globe,
+      category: "Cloud",
+    },
   ];
 
   const categories = {
