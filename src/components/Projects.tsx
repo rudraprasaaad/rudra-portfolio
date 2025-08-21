@@ -24,7 +24,7 @@ const Projects = () => {
       description:
         "Socially is a social media platform designed to connect users through interactive posts, profiles, and real-time chat. It features user authentication, profile customization, likes, comments, and notifications. The platform fosters online engagement by allowing users to share updates, interact with content, and build meaningful connections within a dynamic digital community.",
       tech: ["Next.js", "Postgres", "Clerk", "PrismaORM", "TypeScript"],
-      link: "https://socially-zeta-five.vercel.app/",
+      link: "https://socially.rudraa.online",
       status: "Live",
       icon: Globe,
       accent: "slate",
